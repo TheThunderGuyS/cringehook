@@ -1,7 +1,8 @@
 /**Module that post teh funi embed using a Discord.js webhook
+ * Additional usage instructions, details and examples are in the module's readme.
  * @param {string} id The ID paramater is a string containing the webhook ID (the set of random numbers in the URL: discord.com/api/webhooks/__*940402354661876488*__/Xi2auN2s_TRiSJqAUvJ693RMsrD3iANsIgHG8XB8OmvQQxB0mnxKeaERfWhOgMiFvTmy7)
  * @param {string} token The Token paramater is a string containing the webhook login Token (the set of random characters at the end of the URL: discord.com/api/webhooks/940402354661876488/__*Xi2auN2s_TRiSJqAUvJ693RMsrD3iANsIgHG8XB8OmvQQxB0mnxKeaERfWhOgMiFvTmy7*__)
- * @throws Will reject the promise on failure, as well as throwing the exact Discord.js string output. Common errors are listed in the module's readme.
+ * @throws Will reject the promise on failure, as well as throwing the DiscordAPIError. Common errors are listed in the module's readme.
  * @returns {Promise} Returns a promise.
  */
 module.exports.postCringe = async (id, token) => {
@@ -9,9 +10,9 @@ module.exports.postCringe = async (id, token) => {
     const client = new Discord.WebhookClient(id, token); //Create webhook client
 
     const supposedlyFunny = new Discord.MessageEmbed() //Generate embed that's actually cringe
-        .attachFiles(["scratch.png", "jarate.png", "chungus.png", "mineblocx.png"]) //Images
+        .attachFiles(["https://raw.githubusercontent.com/TheThunderGuyS/cringehook/master/cringe/scratch.png", "https://raw.githubusercontent.com/TheThunderGuyS/cringehook/master/cringe/jarate.png", "https://raw.githubusercontent.com/TheThunderGuyS/cringehook/master/cringe/chungus.png", "https://raw.githubusercontent.com/TheThunderGuyS/cringehook/master/cringe/mineblocx.png"]) //Images
         .setTitle("Click here for FREE V-bucks!!!")
-        .setColor("#FF69B4")
+        .setColor("#FF69B4") //Pink sidebar
         .setAuthor("Elon Musk", "attachment://scratch.png", "https://www.nissanusa.com/")
         .setDescription("An important message from Mojang Studios")
         .setThumbnail("attachment://jarate.png") //BOMBS AWAY
@@ -20,5 +21,5 @@ module.exports.postCringe = async (id, token) => {
         .setFooter("Discord Big Chungus Team | Cringe", "attachment://mineblocx.png");
 
     await client.send(supposedlyFunny) //Send teh funni
-        .catch(err => {throw err; /*Catch throw any error that may occur*/});
+        .catch(err => {throw err; /*Catch and throw any error that occurs*/});
 };

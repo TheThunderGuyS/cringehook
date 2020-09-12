@@ -1,1 +1,9 @@
+# Contained my tokens used for testing
 url.txt
+
+# We npmignore images since they are only read remotely from Github
+cringe/
+
+# Files only needed for dev
+.eslintrc.json
+.gitattributes
