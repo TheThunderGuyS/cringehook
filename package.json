@@ -1,0 +1,30 @@
+{
+    "name": "cringehook",
+    "version": "0.0.1",
+    "description": "A Discord webhook that posts a funny!!1!",
+    "main": "index.js",
+    "scripts": {
+        "test": "@echo \"run 'node ./test.js [id] [token]'\""
+    },
+    "engines": {
+        "node": "^12.18.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TheThunderGuyS/cringehook.git"
+    },
+    "keywords": [
+        "webhook",
+        "discord",
+        "discord webhook",
+        "discord.js",
+        "funny",
+        "unfunny",
+        "cringe"
+    ],
+    "author": "TheThunderGuyS",
+    "license": "MIT",
+    "dependencies": {
+        "discord.js": "^12.3.1"
+    }
+}
