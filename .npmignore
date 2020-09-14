@@ -7,3 +7,4 @@ cringe/
 # Files only needed for dev
 .eslintrc.json
 .gitattributes
+.github/
