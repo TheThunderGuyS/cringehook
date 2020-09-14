@@ -1,7 +1,7 @@
 # cringehook
 A Discord webhook that posts a funny!!1!
 
-![imag](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.0/img/demo.png)
+![imag](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.1/img/demo.png)
 
 *laugh*
 
@@ -11,11 +11,11 @@ A Discord webhook that posts a funny!!1!
 ## The origin
 This kid on Discord:
 
-![image 1](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.0/img/funnylaugh.png)
+![image 1](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.1/img/funnylaugh.png)
 
-![image 2](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.0/img/ccring.png)
+![image 2](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.1/img/ccring.png)
 
-![image 3](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.0/img/message.png)
+![image 3](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.1/img/message.png)
 
 Eh, it was garbage and made nobody laugh, so I made it better :)
 
