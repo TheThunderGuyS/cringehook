@@ -2,7 +2,7 @@
 url.txt
 
 # We npmignore images since they are only read remotely from Github
-cringe/
+img/
 
 # Files only needed for dev
 .eslintrc.json
