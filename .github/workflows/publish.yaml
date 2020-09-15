@@ -1,8 +1,12 @@
 name: Publish Packages on release
 
 on:
+  # Run when a new release is published, or manually.
   release:
     types: published
+  workflow_dispatch:
+    branches:
+      - master
 
 jobs:
   publish:
@@ -10,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      # Configure and publish to NPM
       - uses: actions/setup-node@v1
         with:
           node-version: "12"
@@ -18,3 +23,12 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # Configure and publish to GitHub Packages
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12" 
+          registry-url: "https://npm.pkg.github.com/TheThunderGuyS"
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
