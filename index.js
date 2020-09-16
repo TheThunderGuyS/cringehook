@@ -1,5 +1,5 @@
 /**Module that post teh funi embed using a Discord.js webhook
- * Additional usage instructions, details and examples are in the {@link https://github.com/TheThunderGuyS/cringehook/blob/master/README.md module's readme}.
+ * Additional usage instructions, details and examples are in the {@link https://github.com/TheThunderGuyS/cringehook/blob/1.1.2/README.md module's readme}.
  * @param {string} id "id" is your Webhook ID.
  * @param {string} token "token" is your Webhook Token.
  * @throws {DiscordAPIError} Throws a DiscordAPIError.
@@ -11,7 +11,7 @@ module.exports.postCringe = async (id, token) => {
     const client = new Discord.WebhookClient(id, token); //Create webhook client
 
     const supposedlyFunny = new Discord.MessageEmbed() //Generate embed that's actually cringe
-        .attachFiles(["https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.1/img/scratch.png", "https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.1/img/jarate.png", "https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.1/img/chungus.png", "https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.1/img/mineblocx.png"]) //Images
+        .attachFiles(["https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.2/img/scratch.png", "https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.2/img/jarate.png", "https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.2/img/chungus.png", "https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.2/img/mineblocx.png"]) //Images
         .setTitle("Click here for FREE V-bucks!!!") //yes
         .setColor("#FF69B4") //Pink sidebar
         .setAuthor("Elon Musk", "attachment://scratch.png", "https://www.nissanusa.com/") //elon invented scratch ans nissan murano

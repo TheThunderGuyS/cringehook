@@ -1,7 +1,7 @@
 # cringehook
 A Discord webhook that posts a funny!!1!
 
-![imag](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.1/img/demo.png)
+![imag](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.2/img/demo.png)
 
 *laugh*
 
@@ -11,11 +11,11 @@ A Discord webhook that posts a funny!!1!
 ## The origin
 This kid on Discord:
 
-![image 1](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.1/img/funnylaugh.png)
+![image 1](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.2/img/funnylaugh.png)
 
-![image 2](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.1/img/ccring.png)
+![image 2](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.2/img/ccring.png)
 
-![image 3](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.1/img/message.png)
+![image 3](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.2/img/message.png)
 
 Eh, it was garbage and made nobody laugh, so I made it better :)
 
@@ -36,8 +36,10 @@ If you plan on only ever using cringehook through the [test script](#test-script
 If you want to skip writing code and just use cringehook from the CLI, see [test script](#test-script).
 
 ### Big brain guide
-If you're smart, here's the JSDoc which should be easy to understand. Just require cringehook and use the `postCringe()` function (or see [examples](#examples)):
+If you're smart, here's the JSDoc which should be easy to understand:
 
+> `cringehook.postCringe(id, token);`
+>
 > Module that post teh funi embed using a Discord.js webhook. Additional usage instructions, details and examples are in the [module's readme](./README.md).
  >
  > Parameter: *string* `id` "id" is your Webhook ID.
@@ -49,6 +51,8 @@ If you're smart, here's the JSDoc which should be easy to understand. Just requi
  > Returns: *Promise* Returns a promise.
  >
  > Asynchronous: This module is asynchronous.
+
+Require cringehook and use the `postCringe()` function as documented. See [examples](#examples).
 
 ### Noob guide
 For newbies, follow the guide below:
