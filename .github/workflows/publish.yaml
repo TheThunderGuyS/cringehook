@@ -23,12 +23,3 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      # Configure and publish to GitHub Packages
-      - uses: actions/setup-node@v1
-        with:
-          node-version: "12"
-          registry-url: "https://npm.pkg.github.com/"
-          scope: "@TheThunderGuyS"
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
