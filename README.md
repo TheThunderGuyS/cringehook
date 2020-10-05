@@ -1,7 +1,7 @@
 # cringehook
 A Discord webhook that posts a funny!!1!
 
-![imag](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.2/img/demo.png)
+![imag](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/2.0.0/img/demo.png)
 
 *laugh*
 
@@ -11,11 +11,11 @@ A Discord webhook that posts a funny!!1!
 ## The origin
 This kid on Discord:
 
-![image 1](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.2/img/funnylaugh.png)
+![image 1](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/2.0.0/img/funnylaugh.png)
 
-![image 2](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.2/img/ccring.png)
+![image 2](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/2.0.0/img/ccring.png)
 
-![image 3](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/1.1.2/img/message.png)
+![image 3](https://raw.githubusercontent.com/TheThunderGuyS/cringehook/2.0.0/img/message.png)
 
 Eh, it was garbage and made nobody laugh, so I made it better :)
 
@@ -38,7 +38,7 @@ If you want to skip writing code and just use cringehook from the CLI, see [test
 ### Big brain guide
 If you're smart, here's the JSDoc which should be easy to understand:
 
-> `cringehook.postCringe(id, token);`
+> `cringehook(id, token);`
 >
 > Module that post teh funi embed using a Discord.js webhook. Additional usage instructions, details and examples are in the [module's readme](./README.md).
  >
@@ -52,15 +52,15 @@ If you're smart, here's the JSDoc which should be easy to understand:
  >
  > Asynchronous: This module is asynchronous.
 
-Require cringehook and use the `postCringe()` function as documented. See [examples](#examples).
+Require cringehook and use the default function as documented. See [examples](#examples).
 
 ### Noob guide
 For newbies, follow the guide below:
 
 After having installed cringehook into your project with npm, add `const cringehook = require("cringehook");` to the top of the file where you wish to use cringehook.
-This will expose the `cringehook.postCringe()` function to your file.
+This will expose the `cringehook()` function to your file.
 
-Usage of the function is fairly simple. Run `cringehook.postCringe(id, token);` where you replace "id" with your Webhook ID and "token" with your Webhook Token (these must be strings).
+Usage of the function is fairly simple. Run `cringehook(id, token);` where you replace "id" with your Webhook ID and "token" with your Webhook Token (these must be strings).
 
 Your Webhook ID is the set of random numbers in the URL: https://discord.com/api/webhooks/__*940402354661876488*__/Xi2auN2s_TRiSJqAUvJ693RMsrD3iANsIgHG8XB8OmvQQxB0mnxKeaERfWhOgMiFvTmy7
 
@@ -73,7 +73,7 @@ The function will return a promise that is fulfilled upon success and rejected o
 
 ```js
 const cringehook = require("cringehook");
-cringehook.postCringe("940402354661876488", "Xi2auN2s_TRiSJqAUvJ693RMsrD3iANsIgHG8XB8OmvQQxB0mnxKeaERfWhOgMiFvTmy7")
+cringehook("940402354661876488", "Xi2auN2s_TRiSJqAUvJ693RMsrD3iANsIgHG8XB8OmvQQxB0mnxKeaERfWhOgMiFvTmy7")
     .then(a => {process.exit();});
 ```
 
@@ -81,7 +81,7 @@ cringehook.postCringe("940402354661876488", "Xi2auN2s_TRiSJqAUvJ693RMsrD3iANsIgH
 ```js
 const cringehook = require("cringehook");
 async function ccring() {
-    await cringehook.postCringe("940402354661876488", "Xi2auN2s_TRiSJqAUvJ693RMsrD3iANsIgHG8XB8OmvQQxB0mnxKeaERfWhOgMiFvTmy7")
+    await cringehook("940402354661876488", "Xi2auN2s_TRiSJqAUvJ693RMsrD3iANsIgHG8XB8OmvQQxB0mnxKeaERfWhOgMiFvTmy7")
         .catch((err) => {
             console.error(`Error posting funny: ${err}`);
             process.exit(1);

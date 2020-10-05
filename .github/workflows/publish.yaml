@@ -1,16 +1,13 @@
 name: Publish Packages on release
 
 on:
-  # Run when a new release is published, or manually.
+  # Run when a new release is published.
   release:
     types: published
-  workflow_dispatch:
-    branches:
-      - master
 
 jobs:
   publish:
-    name: Publish Packages
+    name: Publish Packages to NPM
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
