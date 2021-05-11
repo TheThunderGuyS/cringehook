@@ -8,6 +8,12 @@ A Discord webhook that posts a funny!!1!
 ![cringe](https://img.shields.io/badge/cringe-yes-%23FF69B4) ![npm version](https://img.shields.io/npm/v/cringehook?label=version&logo=npm) ![GitHub code size](https://img.shields.io/github/languages/code-size/TheThunderGuyS/cringehook?color=orange&label=size&logo=github) [![CodeFactor](https://www.codefactor.io/repository/github/thethunderguys/cringehook/badge)](https://www.codefactor.io/repository/github/thethunderguys/cringehook) [![Discord](https://img.shields.io/discord/754715521500577915?label=discord&logo=discord&logoColor=white)](https://discord.gg/4cwCxJK)
 
 ---
+
+## kinda important message
+this project is really stupid and now unmaintained
+
+Please ignore the awful documentation and source code, it's fair to say I was very new to programming when I wrote this project.
+
 ## The origin
 This kid on Discord:
 
